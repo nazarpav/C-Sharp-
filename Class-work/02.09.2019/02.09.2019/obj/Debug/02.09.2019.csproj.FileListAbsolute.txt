@@ -1,0 +1,7 @@
+E:\C#\Class-work\02.09.2019\02.09.2019\bin\Debug\02.09.2019.exe.config
+E:\C#\Class-work\02.09.2019\02.09.2019\bin\Debug\02.09.2019.exe
+E:\C#\Class-work\02.09.2019\02.09.2019\bin\Debug\02.09.2019.pdb
+E:\C#\Class-work\02.09.2019\02.09.2019\obj\Debug\02.09.2019.csprojAssemblyReference.cache
+E:\C#\Class-work\02.09.2019\02.09.2019\obj\Debug\02.09.2019.csproj.CoreCompileInputs.cache
+E:\C#\Class-work\02.09.2019\02.09.2019\obj\Debug\02.09.2019.exe
+E:\C#\Class-work\02.09.2019\02.09.2019\obj\Debug\02.09.2019.pdb
