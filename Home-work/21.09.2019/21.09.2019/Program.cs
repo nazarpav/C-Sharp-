@@ -11,7 +11,11 @@ namespace _21._09._2019
             //c.Start();
             ///////////////////////////////////////////////////////////////////==================================================<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             //TASK 2
-
+            DateTime time = new DateTime();
+            programD obj = new programD();
+            obj.EnterWorker();
+            time= DateTime.Parse(Console.ReadLine());
+            Console.WriteLine(obj.ReturnSurname(time));
         }
     }
 }

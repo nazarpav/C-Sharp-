@@ -1,14 +1,53 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "signature": "92bdf5c30a658744fe7bf3afc64eb449b70bae6e"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "21.09.2019/1.0.0": {
+        "dependencies": {
+          "VisioForge.DotNet.Core.TRIAL": "11.2.20"
+        },
         "runtime": {
           "21.09.2019.dll": {}
+        }
+      },
+      "VisioForge.DotNet.Core.TRIAL/11.2.20": {
+        "runtime": {
+          "lib/net45/VisioForge.Controls.UI.Dialogs.dll": {
+            "assemblyVersion": "11.2.20.0",
+            "fileVersion": "11.2.20.0"
+          },
+          "lib/net45/VisioForge.Controls.UI.dll": {
+            "assemblyVersion": "11.2.20.0",
+            "fileVersion": "11.2.20.0"
+          },
+          "lib/net45/VisioForge.Controls.dll": {
+            "assemblyVersion": "11.2.20.0",
+            "fileVersion": "11.2.20.0"
+          },
+          "lib/net45/VisioForge.DirectX.dll": {
+            "assemblyVersion": "2.6.3.0",
+            "fileVersion": "2.6.3.0"
+          },
+          "lib/net45/VisioForge.MediaFramework.dll": {
+            "assemblyVersion": "11.2.20.0",
+            "fileVersion": "11.2.20.0"
+          },
+          "lib/net45/VisioForge.Shared.dll": {
+            "assemblyVersion": "11.2.20.0",
+            "fileVersion": "11.2.20.0"
+          },
+          "lib/net45/VisioForge.Tools.dll": {
+            "assemblyVersion": "11.2.20.0",
+            "fileVersion": "11.2.20.0"
+          },
+          "lib/net45/VisioForge.Types.dll": {
+            "assemblyVersion": "11.2.20.0",
+            "fileVersion": "11.2.20.0"
+          }
         }
       }
     }
@@ -18,6 +57,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "VisioForge.DotNet.Core.TRIAL/11.2.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-atyJpHwrCu/IGQ3LNSXDtFDhc4FQnVZtjAX8lhmtDW1f9krIVLzZpxsJc03AgOa36SmQkzR0gXdemqusshXi4g==",
+      "path": "visioforge.dotnet.core.trial/11.2.20",
+      "hashPath": "visioforge.dotnet.core.trial.11.2.20.nupkg.sha512"
     }
   }
 }

@@ -9,11 +9,11 @@ namespace _21._09._2019
         private string name;
         private string surname;
         private string jobTitle;
-        private string yearOfWork;
+        private DateTime yearOfWork;
 
         public string Name { get => name; set => name = value; }
         public string Surname { get => surname; set => surname = value; }
         public string JobTitle { get => jobTitle; set => jobTitle = value; }
-        public string YearOfWork { get => yearOfWork; set => yearOfWork = value; }
+        public DateTime YearOfWork { get => yearOfWork; set => yearOfWork = value; }
     }
 }
