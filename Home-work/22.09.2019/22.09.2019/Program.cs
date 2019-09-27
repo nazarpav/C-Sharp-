@@ -1,12 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace _22._09._2019
+namespace Store
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Product");
+            // create product
+            var prod = new Product(); 
+            Console.WriteLine("prod");
+            prod.Show();
+
+          //  prod.
         }
     }
 }
