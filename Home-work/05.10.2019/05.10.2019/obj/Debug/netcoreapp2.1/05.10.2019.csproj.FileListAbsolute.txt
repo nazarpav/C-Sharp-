@@ -1,0 +1,11 @@
+E:\C#\Home-work\05.10.2019\05.10.2019\bin\Debug\netcoreapp2.1\05.10.2019.deps.json
+E:\C#\Home-work\05.10.2019\05.10.2019\bin\Debug\netcoreapp2.1\05.10.2019.runtimeconfig.json
+E:\C#\Home-work\05.10.2019\05.10.2019\bin\Debug\netcoreapp2.1\05.10.2019.runtimeconfig.dev.json
+E:\C#\Home-work\05.10.2019\05.10.2019\bin\Debug\netcoreapp2.1\05.10.2019.dll
+E:\C#\Home-work\05.10.2019\05.10.2019\bin\Debug\netcoreapp2.1\05.10.2019.pdb
+E:\C#\Home-work\05.10.2019\05.10.2019\obj\Debug\netcoreapp2.1\05.10.2019.csprojAssemblyReference.cache
+E:\C#\Home-work\05.10.2019\05.10.2019\obj\Debug\netcoreapp2.1\05.10.2019.csproj.CoreCompileInputs.cache
+E:\C#\Home-work\05.10.2019\05.10.2019\obj\Debug\netcoreapp2.1\05.10.2019.AssemblyInfoInputs.cache
+E:\C#\Home-work\05.10.2019\05.10.2019\obj\Debug\netcoreapp2.1\05.10.2019.AssemblyInfo.cs
+E:\C#\Home-work\05.10.2019\05.10.2019\obj\Debug\netcoreapp2.1\05.10.2019.dll
+E:\C#\Home-work\05.10.2019\05.10.2019\obj\Debug\netcoreapp2.1\05.10.2019.pdb

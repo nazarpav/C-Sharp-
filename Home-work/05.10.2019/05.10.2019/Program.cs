@@ -6,7 +6,8 @@ namespace _05._10._2019
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            delegates delegates = new delegates();
+            delegates.Menu();
         }
     }
 }
