@@ -11,7 +11,7 @@ namespace _17._09._2019
     {
         static void Main(string[] args)
         {
-            const short down = -5;
+            const short down = -8;
             const short up = 5;
             RangeOfArray array =new RangeOfArray(up, down);
             for (int i = down; i <up; i++)
