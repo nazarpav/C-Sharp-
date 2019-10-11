@@ -10,14 +10,14 @@
         "projectUniqueName": "E:\\C#\\Home-work\\11.10.2019\\11.10.2019\\11.10.2019.csproj",
         "projectName": "11.10.2019",
         "projectPath": "E:\\C#\\Home-work\\11.10.2019\\11.10.2019\\11.10.2019.csproj",
-        "packagesPath": "C:\\Users\\userZXC\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\назар\\.nuget\\packages\\",
         "outputPath": "E:\\C#\\Home-work\\11.10.2019\\11.10.2019\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\userZXC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\назар\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

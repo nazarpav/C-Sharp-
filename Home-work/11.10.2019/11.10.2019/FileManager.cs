@@ -74,11 +74,9 @@ namespace _11._10._2019
                         Console.WriteLine("Size in byte => " + fileInfo.Length);
                         break;
                     case 15:
-                        Console.WriteLine(buffer.Peek()+"\n"+ Directory.GetCurrentDirectory());
                         for (int i = buffer.Peek().Length - 1; i > 0; i--)
                             if (buffer.Peek()[i] == '\\' || buffer.Peek()[i] == '/')
                             {
-                                Console.WriteLine(buffer.Peek().Remove(0, i));
                                 File.Move(buffer.Peek(), Directory.GetCurrentDirectory() + buffer.Peek().Remove(0, i));
                                 buffer.Pop();
                                 break;
