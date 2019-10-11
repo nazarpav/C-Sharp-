@@ -17,11 +17,13 @@ namespace _11._10._2019
         {
             FileInfo fileInfo;
             int choise = 0;
+            string currenDir = "";
             Stack<string> buffer = new Stack<string>();
             while (true)
             {
                 DrawBuf(buffer);
-                Console.WriteLine("\nCurrent directory =>>>>   " + Directory.GetCurrentDirectory() + "\n");
+                currenDir = Directory.GetCurrentDirectory();
+                Console.WriteLine("\nCurrent directory =>>>>   " + currenDir + "\n");
                 Console.WriteLine("Operation with Directory\n{\n1 :: Create new directory\n2 :: Delete directory\n3 :: View all file in directory\n4 :: View all directory in directory\n}" +
                                               "\nOpearation with file\n{\n11 :: Delete file\n12 :: Copy path to file\n13 :: Move file with use your path\n14 :: View information with file\n15 :: Paste file with buf\n}\nChange directory\n{\n" +
                                               "21 :: Back\n22 :: Go to directory with your path\n23 :: Go to directory with name\n\n0 :: Exit");
@@ -72,18 +74,23 @@ namespace _11._10._2019
                         Console.WriteLine("Size in byte => " + fileInfo.Length);
                         break;
                     case 15:
-                        File.Move(buffer.Pop(), Directory.GetCurrentDirectory());
-                        break;
-                    case 21:
-                        string path = Directory.GetCurrentDirectory();
-                        string pathn = "";
-                        for (int i = path.Length-1; i > 0; i--)
-                            if (path[i] == '\\' || path[i] == '/')
+                        Console.WriteLine(buffer.Peek()+"\n"+ Directory.GetCurrentDirectory());
+                        for (int i = buffer.Peek().Length - 1; i > 0; i--)
+                            if (buffer.Peek()[i] == '\\' || buffer.Peek()[i] == '/')
                             {
-                               pathn = path.Remove(i);
+                                Console.WriteLine(buffer.Peek().Remove(0, i));
+                                File.Move(buffer.Peek(), Directory.GetCurrentDirectory() + buffer.Peek().Remove(0, i));
+                                buffer.Pop();
                                 break;
                             }
-                        Directory.SetCurrentDirectory(pathn);
+                        break;
+                    case 21:
+                        for (int i = currenDir.Length-1; i > 0; i--)
+                            if (currenDir[i] == '\\' || currenDir[i] == '/')
+                            {
+                                Directory.SetCurrentDirectory(currenDir.Remove(i));
+                                break;
+                            }
                         break;
                     case 22:
                         Console.WriteLine("Enter path");

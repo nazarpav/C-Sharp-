@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\назар\\.nuget\\packages\\": {},
+    "C:\\Users\\userZXC\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -17,14 +17,14 @@
       "projectUniqueName": "E:\\C#\\Home-work\\11.10.2019\\11.10.2019\\11.10.2019.csproj",
       "projectName": "11.10.2019",
       "projectPath": "E:\\C#\\Home-work\\11.10.2019\\11.10.2019\\11.10.2019.csproj",
-      "packagesPath": "C:\\Users\\назар\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\userZXC\\.nuget\\packages\\",
       "outputPath": "E:\\C#\\Home-work\\11.10.2019\\11.10.2019\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\назар\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\userZXC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
