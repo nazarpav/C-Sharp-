@@ -71,5 +71,50 @@ namespace _13._10._2019
                 Console.WriteLine(i);
             }
         }
+        public void Task5()
+        {
+            Regex regexEmail = new Regex(@"(\w|\d|\.|_|\-){4,18}@(\w|\d){1,20}.(\w|\d){1,20}");
+            Regex regexPassword = new Regex(@"([A-Z]|[a-z]|\d|(\-|_)){6,}");
+            MatchCollection matches = regexEmail.Matches(Console.ReadLine());
+            MatchCollection matches2 = regexPassword.Matches(Console.ReadLine());
+            foreach (var i in matches)
+            {
+                 Console.WriteLine("Email => "+ i);
+            }
+            foreach (var i in matches2)
+            {
+                Console.WriteLine("Password => " + i);
+            }
+        }
+        public void Task6()
+        {
+            string str = System.IO.File.ReadAllText("Task6.txt");
+            Regex regex = new Regex(@"\d{0,4}\/\d{1,}\/\d{1,} \d{1,}:\d{1,}(:\d+)?");
+            MatchCollection matches = regex.Matches(str);
+            foreach (var i in matches)
+            {
+                Console.WriteLine("date => " + i);
+            }
+        }
+        public void Task7()
+        {
+            string str = System.IO.File.ReadAllText("Task7.txt");
+            Regex regex = new Regex(@"\d{0,1}");
+            MatchCollection matches = regex.Matches(str);
+            string buf = "+38(0";
+
+            foreach (Match i in matches)
+            {
+                if (string.IsNullOrWhiteSpace(i.Value)) continue;
+                if(buf.Length==17)
+                {
+                    System.IO.File.WriteAllText("Task7out.txt",buf);
+                    buf = "+38(0";
+                }
+                else
+                buf += i.Value;
+
+            }
+        }
     }
 }
