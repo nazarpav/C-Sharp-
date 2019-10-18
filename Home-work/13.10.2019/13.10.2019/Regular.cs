@@ -99,22 +99,36 @@ namespace _13._10._2019
         public void Task7()
         {
             string str = System.IO.File.ReadAllText("Task7.txt");
-            Regex regex = new Regex(@"\d{0,1}");
+            Regex regex = new Regex(@"\d{9,9}");
             MatchCollection matches = regex.Matches(str);
-            string buf = "+38(0";
 
             foreach (Match i in matches)
             {
                 if (string.IsNullOrWhiteSpace(i.Value)) continue;
-                if(buf.Length==17)
-                {
-                    System.IO.File.WriteAllText("Task7out.txt",buf);
-                    buf = "+38(0";
-                }
-                else
-                buf += i.Value;
-
+                System.IO.File.AppendAllText("Task7out.txt", "+38(0" + i.Value[0] + i.Value[1] + ") " + i.Value[2] + i.Value[3] + i.Value[4] + "-" + i.Value[5] + i.Value[6] + "-" + i.Value[7] + i.Value[8]+ Environment.NewLine);
             }
+        }
+        public void Task8()
+        {
+            string str = System.IO.File.ReadAllText("Task8.txt");
+            Regex regex1 = new Regex(@"\*\w*\*");
+            Regex regex2 = new Regex(@"-\w*-");
+            MatchCollection matches1 = regex1.Matches(str);
+
+            foreach (Match i in matches1)
+            {
+                if (string.IsNullOrWhiteSpace(i.Value)) continue;
+                str = regex1.Replace(str, i.Value.Trim('*').ToUpper(),1);
+            }
+            MatchCollection matches2 = regex2.Matches(str);
+            foreach (Match i in matches2)
+            {
+                if (string.IsNullOrWhiteSpace(i.Value)) continue;
+                str = regex2.Replace(str, i.Value.Trim('-').ToLower(), 1);
+            }
+            System.IO.File.WriteAllText("Task8out.txt", str);
+
+
         }
     }
 }

@@ -13,7 +13,8 @@ namespace _13._10._2019
             //regex.Task4();
            // regex.Task5();
             //regex.Task6();
-            regex.Task7();
+            //regex.Task7();
+            regex.Task8();
         }
     }
 }
