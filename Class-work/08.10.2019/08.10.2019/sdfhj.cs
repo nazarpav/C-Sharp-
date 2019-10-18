@@ -8,7 +8,6 @@ namespace _08._10._2019
 {
     class qwerty
     {
-        [Required]
         private List<Category> category;
         private List<Product> products;
         Random rnd = new Random();
@@ -74,12 +73,12 @@ namespace _08._10._2019
             //    Console.WriteLine(i + "\n"+ category[i.CategoryId].Name);
             //}
 
-            //var namelist = from p in products
-            //               where (category[p.CategoryId].Name == "Electronic")
-            //               select p;
-            //Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++");
-            //foreach (var i in namelist)
-            //    Console.WriteLine(i);
+            var namelist = from p in products
+                           where (category[p.CategoryId].Name == "Electronic")
+                           select p;
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            foreach (var i in namelist)
+                Console.WriteLine(i);
 
 
         }
