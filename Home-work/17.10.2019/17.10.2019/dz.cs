@@ -65,9 +65,12 @@ namespace _17._10._2019
             data.Add("erty76");
             data.Add("fgb");
             data.Add("op34e");
-            data.Select(p => p[0].ToString());
+            var n=data.SelectMany(p => p[0].ToString()).Reverse();
+            foreach (var i in n)
+            {
+            Console.WriteLine(i);
 
-            Console.WriteLine(buf);
+            }
         }
     }
 }
