@@ -5,6 +5,7 @@ using System.Text;
 
 namespace _19._10._2019
 {
+    [Serializable]
     class User
     {
         public static int IdCount;
@@ -36,6 +37,16 @@ namespace _19._10._2019
             this.CreditCard = CreditCard;
             this.Phone = Phone;
             this.Id = IdCount++;
+        }
+        public void Swap(User user)
+        {
+            this.Login = user.Login;
+            this.Password = user.Password;
+            this.ConfirmPassword = user.ConfirmPassword;
+            this.E_mail = user.E_mail;
+            this.CreditCard = user.CreditCard;
+            this.Phone = user.Phone;
+            this.Id = user.Id;
         }
         public override string ToString()
         {
