@@ -49,8 +49,8 @@ namespace _19._10._2019
                             newUser.CreditCard = CreditCard;
                             newUser.Phone = Phone;
                             var results = new List<ValidationResult>();
-                            var context = new ValidationContext(Userlist);
-                            if (!(isValid = Validator.TryValidateObject(Userlist, context, results, true)))
+                            var context = new ValidationContext(newUser);
+                            if (!(isValid = Validator.TryValidateObject(newUser, context, results, true)))
                             {
                                 foreach (ValidationResult error in results)
                                 {
